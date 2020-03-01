@@ -301,7 +301,8 @@
         autoplay: false,
         autoplaySpeed: 3000,
         pauseOnHover: false,
-        pauseOnFocus: false
+        pauseOnFocus: false,
+        draggable: false
     });
 
 }(jQuery));

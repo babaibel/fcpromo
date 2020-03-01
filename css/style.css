@@ -944,12 +944,9 @@ img {
 :: 8.0 WELCOME AREA CSS
 ****************************** */
 .welcome-area {
-    height: 740px;
+    height: auto;
+    padding: 120px 0 80px;
     z-index: 1;
-}
-
-.welcome-area .slick{
-    margin-top: 160px;
 }
 
 .welcome-area .slick .slick__slide{
@@ -961,7 +958,7 @@ img {
 }
 
 .welcome-area .slick-dots{
-    bottom: -50px;
+    bottom: -40px;
 }
 
 .welcome-area .slick-dots li button{
@@ -1535,6 +1532,10 @@ img {
     box-shadow: 0 0.313rem 0.875rem rgba(45, 49, 54, 0.09);
     background-color: #fff;
     border-radius: 1rem;
+}
+
+.single-price-plan table > thead > tr:first-child th{
+    border-top: 0;
 }
 
 .plan-title > h3 {
