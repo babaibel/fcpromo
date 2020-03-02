@@ -79,19 +79,13 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li>
-                                        <a class="dropdown-item" href="index.html">Что такое Flash Cross?</a>
+                                        <a class="dropdown-item js-goto" data-slide="0" href="javascript:;">Что такое Flash Cross?</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="index-2.html">Почему стоит попробовать?</a>
+                                        <a class="dropdown-item js-goto" data-slide="3" href="javascript:;">Почему Flash Cross?</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="index-2.html">Что нужно для участия?</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="index-3.html">Подробнее</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="index-4.html">Видео об игре</a>
+                                        <a class="dropdown-item js-goto" data-slide="1" href="javascript:;">Что нужно для участия?</a>
                                     </li>
                                 </ul>
                             </li>
@@ -101,24 +95,24 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li>
-                                        <a class="dropdown-item" href="index.html">Flash Cross №22</a>
+                                        <a class="dropdown-item scroll" href="#fc22">Flash Cross №22</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="index-2.html">Классы и стоимость</a>
+                                        <a class="dropdown-item scroll" href="#fc22-price">Классы и стоимость</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="index-2.html">Как принять участие</a>
+                                        <a class="dropdown-item scroll" href="#fc22-how">Как принять участие</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="index-2.html">Подать заявку</a>
+                                        <a class="dropdown-item scroll" href="#fc22-contact">Подать заявку</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link scroll" href="#screenshots">Фотографии</a>
+                                <a class="nav-link scroll" href="#photos">Фотографии</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link scroll" href="#pricing">Вопрос/Ответ</a>
+                                <a class="nav-link scroll" href="#faq">Вопрос/Ответ</a>
                             </li>
                         </ul>
                     </nav>
@@ -129,7 +123,7 @@
 
         <!-- ***** Welcome Area Start ***** -->
         <section id="home" class="section welcome-area">
-            <div class="slick">
+            <div class="slick main-slider js-main-slider">
                 <div class="slick__slide">
                 	<div class="container h-100">
                     <div class="row align-items-center h-100">
@@ -137,21 +131,29 @@
                         <div class="col-12 col-md-6">
                             <div class="welcome-intro">
                                 <h1 class="h2">Что такое <span class="mark">Flash&nbsp;Cross</span>&nbsp;?</h1>
-                                <p class="my-4">Flash-Cross - это приключенческая игра для любителей и спортсменов, в которой одинаково важны физическая подготовка и интеллектуальные способности.</p>
-                                <p class="my-4">Flash-Cross - это приключенческая игра для любителей и спортсменов, в которой важны как интеллектуальные способности, так и физическая подготовка.</p>
-                                <p class="my-4"><b class="bbot">Команда из 2 человек:</b></p>
-                                <ul>
-                                    <li>Находит объекты отмеченные в карте</li>
-                                    <li>Выполняет фото-задания</li>
-                                    <li>Разгадывает загадки, ребусы, головоломки</li>
+                                <p class="my-4">Flash-Cross ― это приключенческая игра для любителей и спортсменов, в которой важны интеллектуальные способности и физическая подготовка.</p>
+                                <p class="my-4"><b class="bbot">Команде из 2-х человек предстоит:</b></p>
+                                <ul class="list-bullet">
+                                    <li>Перемещаться по местности на велосипеде,<br> машине или пешком</li>
+                                    <li>Искать и фотографировать объекты</li>
+                                    <li>Разгадывать загадки и головоломки</li>
+                                    <li>Выполнять нестандартные задания</li>
                                 </ul>
-                                <a href="#" class="btn">Что нужно для участия?</a>
+                                <a class="btn js-goto" data-slide="1" href="javascript:;">Почему Flash Cross?</a>
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
                             <!-- Image Box -->
                             <div class="image-box text-center icon-1 p-5" data-aos-duration="2s" data-wow-delay="0.4s">
                                 <img src="img/img22.jpg" alt="">
+                                <a class="play-btn" data-fancybox="" href="https://youtu.be/fQlBqDAdS_g">
+                                  <div class="btn-circle play-animation"></div>
+                                  <div class="btn-circle play-animation animation-short"></div>
+                                  <!-- Play Icon -->
+                                  <div class="play-icon">
+                                      <svg class="svg-inline--fa fa-play fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg><!-- <i class="fas fa-play"></i> -->
+                                  </div>
+                              </a>
                             </div>
                         </div>
                     </div>
@@ -163,16 +165,59 @@
                         <!-- Welcome Intro Start -->
                         <div class="col-12 col-md-6">
                             <div class="welcome-intro">
-                                <h2 class="h2">Что нужно для участия?</h2>
-                                <p class="my-4">Обязательно необходимых для участия условий немного:</p>
-                                <ul>
-                                    <li>Напарник или напарница</li>
-                                    <li>Фотоаппарат или телефон с камерой</li>
-                                    <li>Велосипед или автомобиль <br><span class="text-muted">Для пешего класса транспорт не нужен.</span></li>
-                                    <li>Умение ориентироваться на местности<br><span class="text-muted">Использование GPS навигатора не запрещено.</span></li>
-                                    <li>Подать заявку и оплатить стартовый взнос</li>
+                                <h2 class="h2 mb-4">Почему Flash Cross?</h2>
+                                <ul class="check-list">
+                                  <li class="py-1">
+                                      <!-- List Box -->
+                                      <div class="list-box media">
+                                          <span class="icon align-self-center"><i class="fas fa-tree"></i></span>
+                                          <span class="media-body pl-3">Выходной день на свежем воздухе</span>
+                                      </div>
+                                  </li>
+                                  <li class="py-1">
+                                      <!-- List Box -->
+                                      <div class="list-box media">
+                                          <span class="icon align-self-center"><i class="fas fa-hands-helping"></i></span>
+                                          <span class="media-body pl-3">Новые знакомства и впечатления</span>
+                                      </div>
+                                  </li>
+                                   <li class="py-1">
+                                      <!-- List Box -->
+                                      <div class="list-box media">
+                                          <span class="icon align-self-center"><i class="fas fa-grin-stars"></i></span>
+                                          <span class="media-body pl-3">Соревновательный азарт</span>
+                                      </div>
+                                  </li>
+                                  <li class="py-1">
+                                      <!-- List Box -->
+                                      <div class="list-box media">
+                                          <span class="icon align-self-center"><i class="fas fa-utensils"></i></span>
+                                          <span class="media-body pl-3">Посиделки за финишным столом</span>
+                                      </div>
+                                  </li>
+                                  <li class="py-1">
+                                      <!-- List Box -->
+                                      <div class="list-box media">
+                                          <span class="icon align-self-center"><i class="fas fa-images"></i></span>
+                                          <span class="media-body pl-3">Много фотографий на память</span>
+                                      </div>
+                                  </li>
+                                  <li class="py-1">
+                                      <!-- List Box -->
+                                      <div class="list-box media">
+                                          <span class="icon align-self-center"><i class="fas fa-thumbs-up"></i></span>
+                                          <span class="media-body pl-3">Положительный заряд эмоций</span>
+                                      </div>
+                                  </li>
+                                  <li class="py-1">
+                                      <!-- List Box -->
+                                      <div class="list-box media">
+                                          <span class="icon align-self-center"><i class="fas fa-medal"></i></span>
+                                          <span class="media-body pl-3">Призы для победителей</span>
+                                      </div>
+                                  </li>
                                 </ul>
-                                <a href="#" class="btn">Немного подробнее</a>
+                                <a class="btn js-goto" data-slide="3" href="javascript:;">Что нужно для участия?</a>
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
@@ -185,15 +230,50 @@
                     </div>
                 </div>
                 <div class="slick__slide">
-                	<div class="container h-100">
+                  <div class="container h-100">
                     <div class="row align-items-center h-100">
                         <!-- Welcome Intro Start -->
                         <div class="col-12 col-md-6">
                             <div class="welcome-intro">
-                                <h2 class="h2">Подробнее</h2>
-                                <p class="my-4">Количество заданий превышает возможности команды по их выполнению за отведенное время, поэтому команда сама выбирает, какие задания и в каком порядке выполнять, с целью набора максимального количества баллов за их выполнение и прибытия на финиш к назначенному часу.</p>
-                                <p class="my-4">На финише судьи оценивают соответствие фотографий команды выданным фотозаданиям, подсчитывают количество баллов, набранных командой и формируют итоговые рейтинги.</p>
-                                <a href="#" class="btn">Видео об игре</a>
+                                <h2 class="h2 mb-4">Что нужно для участия?</h2>
+                                <ul class="check-list">
+                                  <li class="py-2">
+                                      <!-- List Box -->
+                                      <div class="list-box media">
+                                          <span class="icon align-self-center"><i class="fas fa-user-friends"></i></span>
+                                          <span class="media-body pl-3">Напарник или напарница<br><span class="text-muted">Мужские и женские команды награждаются раздельно</span></span>
+                                      </div>
+                                  </li>
+                                  <li class="py-2">
+                                      <!-- List Box -->
+                                      <div class="list-box media">
+                                          <span class="icon align-self-center"><i class="fas fa-camera"></i></span>
+                                          <span class="media-body pl-3">Фотоаппарат или телефон с камерой<br><span class="text-muted">С маленьким объективом будет удобнее</span></span>
+                                      </div>
+                                  </li>
+                                   <li class="py-2">
+                                      <!-- List Box -->
+                                      <div class="list-box media">
+                                          <span class="icon align-self-center"><i class="fas fa-bicycle"></i></span>
+                                          <span class="media-body pl-3">Велосипед или автомобиль<br><span class="text-muted">Для участия в соответствующем классе</span></span>
+                                      </div>
+                                  </li>
+                                  <li class="py-2">
+                                      <!-- List Box -->
+                                      <div class="list-box media">
+                                          <span class="icon align-self-center"><i class="fas fa-map"></i></span>
+                                          <span class="media-body pl-3">Умение ориентироваться по карте<br><span class="text-muted">Использование GPS навигатора не запрещено.</span></span>
+                                      </div>
+                                  </li>
+                                  <li class="py-2">
+                                      <!-- List Box -->
+                                      <div class="list-box media">
+                                          <span class="icon align-self-center"><i class="fas fa-coins"></i></span>
+                                          <span class="media-body pl-3">Зарегистрироваться и оплатить взнос<br><span class="text-muted">Чем раньше оплата, тем дешевле стоимость</span></span>
+                                      </div>
+                                  </li>
+                                </ul>
+                                <a class="btn js-goto" data-slide="2" href="javascript:;">Когда следующая игра?</a>
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
@@ -203,34 +283,14 @@
                             </div>
                         </div>
                     </div>
-                    </div>
-                </div>
-                <div class="slick__slide">
-                	<div class="container h-100">
-                    <div class="row align-items-center h-100">
-                        <!-- Welcome Intro Start -->
-                        <div class="col-12 col-md-6">
-                            <div class="welcome-intro">
-                                <h2 class="h2">Видео от авторов</h2>
-                                <p class="my-4">На видео один из создателей игры рассказывает о флеш-кроссе.</p>
-                                <a href="#" class="btn">Когда ближайшая игра?</a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <!-- Image Box -->
-                            <div class="image-box text-center icon-1 p-5 wow fadeInLeft" data-aos-duration="2s" data-wow-delay="0.4s">
-                                <img src="img/img22.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    </div>
+                  </div>
                 </div>
             </div>
         </section>
         <!-- ***** Welcome Area End ***** -->
 
         <!-- ***** Discover Area Start ***** -->
-        <section class="section discover-area overflow-hidden ptb_100">
+        <section class="section discover-area overflow-hidden ptb_100" id="fc22">
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-12 col-lg-4 order-2 order-lg-1">
@@ -287,78 +347,78 @@
         </section>
         <!-- ***** Discover Area End ***** -->
 
-        <section id="pricing" class="section price-plan-area bg-gray overflow-hidden ptb_100">
+        <section id="fc22-price" class="section price-plan-area bg-gray overflow-hidden ptb_100">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-10 col-lg-7">
                         <!-- Section Heading -->
                         <div class="section-heading text-center">
                             <h2>Классы и стоимость</h2>
-                            <p class="d-none d-sm-block mt-4">Вы можете принять участие в игре на велосипеде (6 или 12 часов), пешком или на машине (5 часов). Чем раньше вы оплатите взнос, тем дешвле игра будет!</p>
+                            <p class="d-none d-sm-block mt-4">Вы можете принять участие в игре на велосипеде (6 или 12 часов), пешком или на машине (5 часов). Чем раньше вы оплатите взнос, тем дешевле игра будет!</p>
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-12 col-sm-10 col-lg-8">
-                        <div class="single-price-plan text-center pb-5">
+                        <div class="single-price-plan text-center mb-4">
                             <table class="table table-striped">
-														  <thead>
-														    <tr>
-													    		<th rowspan="2" scope="col">Класс (Время)</th>
-														      <th colspan="4" scope="colgroup">Оплата до</th>
-														    </tr>
-														    <tr>
-														      <th scope="col">31 марта</th>
-														      <th scope="col">31 апреля</th>
-														      <th scope="col">16 мая</th>
-														      <th scope="col">31 мая*</th>
-														    </tr>
-														  </thead>
-														  <tbody>
-														    <tr>
-														      <th scope="row">Пеший (5 часов)</th>
-														      <td>800 р.</td>
-														      <td>900 р.</td>
-														      <td>1000 р.</td>
-														      <td>1300 р.</td>
-														    </tr>
-														    <tr>
-														      <th scope="row">Авто (5 часов)</th>
-														      <td>1000 р.</td>
-														      <td>1100 р.</td>
-														      <td>1200 р.</td>
-														      <td>1500 р.</td>
-														    </tr>
-														    <tr>
-														      <th scope="row">Вело (6 часов)</th>
-														      <td>1000 р.</td>
-														      <td>1200 р.</td>
-														      <td>1400 р.</td>
-														      <td>1700 р.</td>
-														    </tr>
-														    <tr>
-														      <th scope="row">Вело (10 часов)</th>
-														      <td>1200 р.</td>
-														      <td>1400 р.</td>
-														      <td>1600 р.</td>
-														      <td>1900 р.</td>
-														    </tr>
-														    <tr class="table-danger">
-														      <td colspan="5">* После 31 мая стоимость и возможность оплаты обговаривается индивидуально. Команде может быть отказано в участии при отсутствии свободных комплектов заданий.</td>
-														    </tr>
-														  </tbody>
-														</table>
-														<div class="plan-button">
-                                <a href="#" class="btn mt-4">Как принять участие?</a>
-                            </div>
-               			 			</div>
+                              <thead>
+                                <tr>
+                              		<th rowspan="2" scope="col">Класс (Время)</th>
+                                  <th colspan="4" scope="colgroup">Оплата до</th>
+                                </tr>
+                                <tr>
+                                  <th scope="col">31 марта</th>
+                                  <th scope="col">31 апреля</th>
+                                  <th scope="col">16 мая</th>
+                                  <th scope="col">31 мая*</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">Пеший (5 часов)</th>
+                                  <td>800 р.</td>
+                                  <td>900 р.</td>
+                                  <td>1000 р.</td>
+                                  <td>1300 р.</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Авто (5 часов)</th>
+                                  <td>1000 р.</td>
+                                  <td>1100 р.</td>
+                                  <td>1200 р.</td>
+                                  <td>1500 р.</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Вело (6 часов)</th>
+                                  <td>1000 р.</td>
+                                  <td>1200 р.</td>
+                                  <td>1400 р.</td>
+                                  <td>1700 р.</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Вело (10 часов)</th>
+                                  <td>1200 р.</td>
+                                  <td>1400 р.</td>
+                                  <td>1600 р.</td>
+                                  <td>1900 р.</td>
+                                </tr>
+                                <tr class="table-danger">
+                                  <td colspan="5" class="pl-4 pr-4">* После 31 мая стоимость и возможность оплаты обговаривается индивидуально. Команде может быть отказано в участии при отсутствии свободных комплектов заданий.</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>
+                        <div class="text-center pt-4">
+                          <a href="#" class="btn">Как принять участие?</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ***** Work Area Start ***** -->
-        <section class="section work-area bg-overlay overflow-hidden ptb_100">
+        <section class="section work-area bg-overlay overflow-hidden ptb_100" id="fc22-how">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-6">
@@ -377,7 +437,7 @@
                                 <img class="avatar-md" src="img/download.png" alt="">
                             </div>
                             <h3 class="text-white py-3">Подать заявку</h3>
-                            <p class="text-white">Необходимо определиться с классом игры и связаться с организаторам любым удобным способом. </p>
+                            <p class="text-white">Необходимо определиться с классом игры и связаться с организаторами любым удобным способом. </p>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
@@ -505,7 +565,7 @@
 
 
         <!-- ***** FAQ Area Start ***** -->
-        <section class="section faq-area ptb_100">
+        <section class="section faq-area ptb_100" id="fc22-contact">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-10 col-lg-7">
@@ -623,6 +683,31 @@
         <!--====== Height Emulator Area Start ======-->
         <div class="height-emulator d-none d-lg-block"></div>
         <!--====== Height Emulator Area End ======-->
+
+        <section class="section download-area overlay-dark ptb_100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-8">
+                        <!-- Download Text -->
+                        <div class="download-text text-center">
+                            <h2 class="text-white"></h2>
+                            <p class="text-white my-3 d-none d-sm-block">sApp is available for all devices, consectetur adipisicing elit. Itaque at harum quam explicabo. Aliquam optio, delectus, dolorem quod neque eos totam. Delectus quae animi tenetur voluptates doloribus commodi dicta modi aliquid deserunt, quis maiores nesciunt autem, aperiam natus.</p>
+                            <p class="text-white my-3 d-block d-sm-none">sApp is available for all devices, consectetur adipisicing elit. Vel neque, cumque. Temporibus eligendi veniam, necessitatibus aut id labore nisi quisquam.</p>
+                            <!-- Store Buttons -->
+                            <div class="button-group store-buttons d-flex justify-content-center">
+                                <a href="#">
+                                    <img src="assets/img/icon/google-play.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="assets/img/icon/app-store.png" alt="">
+                                </a>
+                            </div>
+                            <span class="d-inline-block text-white fw-3 font-italic mt-3">* Available on iPhone, iPad and all Android devices</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!--====== Footer Area Start ======-->
         <footer class="footer-area footer-fixed">

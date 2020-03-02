@@ -292,7 +292,7 @@
             });
     });
 
-    $('.slick').slick({
+    $('.js-main-slider').slick({
         dots: true,
         arrows: false,
         speed: 900,
@@ -303,6 +303,10 @@
         pauseOnHover: false,
         pauseOnFocus: false,
         draggable: false
+    });
+
+    $('.js-goto').on('click tochstart', function(){
+        $( '.js-main-slider' ).slick('goTo', $(this).data('slide'));
     });
 
 }(jQuery));

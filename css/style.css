@@ -46,7 +46,7 @@
 /* ******************************
 :: 1.0 WEB FONTS
 ****************************** */
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,500,600,700&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,500,600,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
 
 /* ******************************
 :: 2.0 IMPORT ALL CSS
@@ -262,7 +262,7 @@ img {
 
 /*SECTION HEADING*/
 .section-heading {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .section-heading > span {
@@ -301,7 +301,7 @@ img {
 }
 
 .ptb_100 {
-    padding: 100px 0;
+    padding: 100px 0 80px;
 }
 
 .ptb_150 {
@@ -986,21 +986,35 @@ img {
     color: #333;
 }
 
+.list-box.media{
+    align-items: center;
+}
 
 .welcome-intro .text-muted{
     font-size: 13px;
 }
 
-.welcome-intro ul{
+.welcome-intro .list-bullet{
     margin-bottom: 20px;
     color: #333;
 }
 
-.welcome-intro ul li{
+.welcome-intro .list-box .icon{
+    color: #ff0;
+}
+
+.welcome-intro .list-bullet li{
     font-size: 16px;
     padding-left: 25px;
     margin-bottom: 10px;
     position: relative;
+}
+
+.welcome-intro .check-list{
+    color: #333;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
 }
 
 .bbot{
@@ -1009,15 +1023,14 @@ img {
     padding: 5px 10px;
 }
 
-.welcome-intro ul li:before{
+.welcome-intro .list-bullet li:before{
     content: "";
     position: absolute;
     left: 10px;
-    top: 50%;
+    top: 9px;
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    margin-top: -3px;
     background: #000;
 }
 
@@ -1034,6 +1047,14 @@ img {
     max-width: 90%;
     margin: 25px auto;
     overflow: hidden;
+    position: relative;
+}
+
+.welcome-area .image-box .play-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
 }
 
 .welcome-area .h2{
@@ -1532,6 +1553,11 @@ img {
     box-shadow: 0 0.313rem 0.875rem rgba(45, 49, 54, 0.09);
     background-color: #fff;
     border-radius: 1rem;
+    overflow: hidden;
+}
+
+.single-price-plan table{
+    margin-bottom: 0;
 }
 
 .single-price-plan table > thead > tr:first-child th{
@@ -1564,6 +1590,7 @@ img {
     background: transparent;
     color: #222;
     text-align: left;
+    box-shadow: none;
 }
 
 .card-header .btn.collapsed {
