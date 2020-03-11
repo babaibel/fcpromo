@@ -29,18 +29,7 @@
     <!--====== Preloader Area Start ======-->
     <div class="preloader-main">
         <div class="preloader-wapper">
-            <svg class="preloader" xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="200">
-                <defs>
-                    <filter id="goo" x="-40%" y="-40%" height="200%" width="400%">
-                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -8" result="goo" />
-                    </filter>
-                </defs>
-                <g filter="url(#goo)">
-                    <circle class="dot" cx="50" cy="50" r="25" fill="#ffff00" />
-                    <circle class="dot" cx="50" cy="50" r="25" fill="#333333" />
-                </g>
-            </svg>
+            <img class="preloader" src="img/logo.png" alt="brand-logo">
             <div>
                 <div class="loader-section section-left"></div>
                 <div class="loader-section section-right"></div>
@@ -104,7 +93,7 @@
                                         <a class="dropdown-item scroll" href="#fc22-how">Как принять участие</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item scroll" href="#fc22-contact">Подать заявку</a>
+                                        <a class="dropdown-item scroll" href="#fc22-contact">Связь с организаторами</a>
                                     </li>
                                 </ul>
                             </li>
@@ -291,16 +280,16 @@
         <section class="section discover-area overflow-hidden ptb_100" id="fc22">
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="col-12 col-lg-4 order-2 order-lg-1">
+                    <div class="col-12 col-lg-5 order-2 order-lg-1">
                         <!-- Discover Thumb -->
                         <!-- <div class="image-box text-center icon-1 p-5">
                             <img src="img/fc22.jpg" alt="">
                         </div> -->
                         <div class="image-box text-center icon-1 p-5">
-                        	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1474627a3e7be02aa9e09df7cfc7e2f711ee84134a566b8fb76a808479edbe27&amp;width=100%25&amp;height=470&amp;lang=ru_RU&amp;scroll=true"></script>
+                        	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1474627a3e7be02aa9e09df7cfc7e2f711ee84134a566b8fb76a808479edbe27&amp;width=100%25&amp;height=570&amp;lang=ru_RU&amp;scroll=true"></script>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-8 order-1 order-lg-2">
+                    <div class="col-12 col-lg-7 order-1 order-lg-2">
                         <!-- Discover Text -->
                         <div class="discover-text px-0 px-lg-4 pt-4 pt-lg-0">
                             <h2 class="pb-4">Flash Cross №22<br> Неразведанные запасы</h2>
@@ -312,7 +301,7 @@
                                     <!-- List Box -->
                                     <div class="list-box media">
                                         <span class="icon align-self-center"><i class="fas fa-map-marker-alt"></i></span>
-                                        <span class="media-body pl-3">Место старта г. Губкин - равноудален от Белгорода, Курска и Воронежа.</span>
+                                        <span class="media-body pl-3">Место старта г. Губкин - равноудален от Белгорода, Курска и Воронежа. (Точное место старта 01.06)</span>
                                     </div>
                                 </li>
                                 <li class="py-1">
@@ -326,18 +315,18 @@
                                     <!-- List Box -->
                                     <div class="list-box media">
                                         <span class="icon align-self-center"><i class="fas fa-hourglass-end"></i></span>
-                                        <span class="media-body pl-3">Короткая и длинная дистанции для велосипедного класса.</span>
+                                        <span class="media-body pl-3">Короткая (6часов) и длинная (10 часов) дистанции для велосипедного класса.</span>
                                     </div>
                                 </li>
                                 <li class="py-1">
                                     <!-- List Box -->
                                     <div class="list-box media">
                                         <span class="icon align-self-center"><i class="fas fa-percentage"></i></span>
-                                        <span class="media-body pl-3">Скидки на стартовый взнос для новых участников.</span>
+                                        <span class="media-body pl-3">Скидки на стартовый взнос за раннюю регистрацию и для всех новых участников.</span>
                                     </div>
                                 </li>
                             </ul>
-                            <a href="#" class="btn btn-bordered mt-4">Классы и стоимость</a>
+                            <a href="#fc22-price" class="btn btn-bordered mt-4 scroll">Классы и стоимость</a>
                         </div>
                     </div>
                 </div>
@@ -345,7 +334,7 @@
         </section>
         <!-- ***** Discover Area End ***** -->
 
-        <section id="fc22-price" class="section price-plan-area bg-gray overflow-hidden ptb_100">
+        <section id="fc22-price" class="section price-plan-area bg-gray ptb_100">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-10 col-lg-7">
@@ -369,7 +358,7 @@
                                   <th scope="col">31 марта</th>
                                   <th scope="col">31 апреля</th>
                                   <th scope="col">16 мая</th>
-                                  <th scope="col">31 мая*</th>
+                                  <th scope="col">31 мая<span class="text-danger">*</span></th>
                                 </tr>
                               </thead>
                               <tbody>
@@ -401,6 +390,12 @@
                                   <td>1600 р.</td>
                                   <td>1900 р.</td>
                                 </tr>
+                                <tr class="table-success">
+                                  <td colspan="5" class="pl-4 pr-4">Скидка за нового участника - 150 р. Если вся команда играет первый раз - 300 р.</td>
+                                </tr>
+                                <tr class="table-warning">
+                                  <td colspan="5" class="pl-4 pr-4">В случаи отказа от участия - возвращается 50% стоимости. Команда вправе найти себе замену и самостоятельно решить вопрос с оплатой.</td>
+                                </tr>
                                 <tr class="table-danger">
                                   <td colspan="5" class="pl-4 pr-4">* После 31 мая стоимость и возможность оплаты обговаривается индивидуально. Команде может быть отказано в участии при отсутствии свободных комплектов заданий.</td>
                                 </tr>
@@ -423,6 +418,7 @@
                         <!-- Work Content -->
                         <div class="work-content text-center">
                             <h2 class="text-white">Как принять участие?</h2>
+                            <p class="text-white my-3 mt-sm-4 mb-sm-5">На официальном сайте мы можете самостоятельно подать заявку на игру. Если у Вас появились сложности - свяжитесь с организаторами.</p>
                         </div>
                     </div>
                 </div>
@@ -432,10 +428,10 @@
                         <div class="single-work text-center p-3">
                             <!-- Work Icon -->
                             <div class="work-icon">
-                                <
+                                <i class="fas fa-user-lock"></i>
                             </div>
-                            <h3 class="text-white py-3">Подать заявку</h3>
-                            <p class="text-white">Самостоятельно <a class="link-yell" href="http://bel.flashcross.org/CreatePlayer" target="_blank">зарегистрировать</a> двух игроков и <a class="link-yell" href="http://bel.flashcross.org/CreateTeam" target="_blank">создать команду</a> на игру либо попросить организаторов.</p>
+                            <h3 class="text-white py-3">Страница игрока</h3>
+                            <p class="text-white">Новичкам необходимо <a class="link-yell" href="http://bel.flashcross.org/CreatePlayer" target="_blank">зарегистрировать</a> двух игроков. Старым участникам достаточно войти используя логин и пароль. </p>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
@@ -443,21 +439,21 @@
                         <div class="single-work text-center p-3">
                             <!-- Work Icon -->
                             <div class="work-icon">
-                                <img class="avatar-md" src="img/settings.png" alt="">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                            <h3 class="text-white py-3">Создать команду</h3>
+                            <p class="text-white">На странице игрока нажать кнопку <a class="link-yell" href="http://bel.flashcross.org/CreateTeam" target="_blank">"создать команду"</a>. Вам остается ввести название команды, выбрать второго игрока и ввести его командный пароль.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <!-- Single Work -->
+                        <div class="single-work text-center p-3">
+                            <!-- Work Icon -->
+                            <div class="work-icon">
+                                <i class="fas fa-wallet"></i>
                             </div>
                             <h3 class="text-white py-3">Оплатить участие</h3>
-                            <p class="text-white">После подтвержения вашей заявки необходимо оплатить стартовый взнос любым удобным вариантом. </p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <!-- Single Work -->
-                        <div class="single-work text-center p-3">
-                            <!-- Work Icon -->
-                            <div class="work-icon">
-                                <img class="avatar-md" src="img/app.png" alt="">
-                            </div>
-                            <h3 class="text-white py-3">Приехать на старт</h3>
-                            <p class="text-white">Важно не перепутать дату, время и место. В разделе вопрос/ответ вы найдете много интересного.</p>
+                            <p class="text-white">Сообщите организаторам, что вы зарегистрировались и готовы оплатить. Выберите любой из удобных вариантов. </p>
                         </div>
                     </div>
                 </div>
@@ -466,13 +462,13 @@
         <!-- ***** Work Area End ***** -->
 
                 <!--====== Contact Area Start ======-->
-        <section id="contact" class="contact-area  ptb_100">
+        <section id="fc22-contact" class="contact-area  ptb_100">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-10 col-lg-6">
                         <!-- Section Heading -->
                         <div class="section-heading text-center">
-                            <h2>Подать заявку на игру</h2>
+                            <h2>Связь с организаторами</h2>
                             <p class="d-none d-sm-block mt-4">Заполните регистрационную форму ниже или свяжитесь с организаторами используя контакты.</p>
                         </div>
                     </div>
