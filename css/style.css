@@ -1654,6 +1654,8 @@ img {
     color: #222;
     text-align: left;
     box-shadow: none;
+    padding-right: 50px!important;
+    line-height: 1.5;
 }
 
 .card-header .btn.collapsed {
