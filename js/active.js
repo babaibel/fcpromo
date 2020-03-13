@@ -292,17 +292,32 @@
             });
     });
 
-    $('.js-main-slider').slick({
-        dots: true,
-        arrows: false,
-        speed: 900,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 3000,
-        pauseOnHover: false,
-        pauseOnFocus: false,
-        draggable: false
+    function slickify(){
+        $('.js-main-slider').slick({
+            dots: true,
+            arrows: false,
+            speed: 900,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            pauseOnHover: false,
+            pauseOnFocus: false,
+            draggable: false,
+             responsive: [
+                {
+                    breakpoint: 991,
+                    settings: "unslick"
+                }
+            ]
+        });
+    }
+
+    slickify();
+    $(window).resize(function(){
+        if (window.screen.width  > 991) {
+            slickify();   
+        }
     });
 
     $('.js-goto').on('click tochstart', function(){

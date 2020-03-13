@@ -88,6 +88,23 @@
 }
 
 /*SECTION HEADING*/
+@media (max-width: 1199px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 37px;
+    }
+
+    .welcome-area .h2{
+        font-size: 35px;
+    }
+
+    .section-heading {
+        margin-bottom: 50px;
+    }
+}
 @media (max-width: 991px) {
     h1 {
         font-size: 3em;
@@ -124,6 +141,11 @@
         line-height: 1.4;
     }
 
+    .welcome-area .h2{
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
     h3 {
         font-size: 18px;
         line-height: 1.4;
@@ -135,6 +157,10 @@
 
     .section-heading > h2 {
         line-height: 1.5;
+    }
+
+    .welcome-intro .btn{
+        display: none;
     }
 }
 
@@ -197,7 +223,6 @@
     [data-theme=dark] .main:before {
         background: #01081f;
     }
-
     .canvas-open {
         overflow: hidden;
     }
@@ -206,6 +231,11 @@
         width: 100%;
         opacity: .95;
         visibility: visible;
+    }
+
+    .navbar-inner .dropdown-menu .dropdown-item{
+        color: #ff0;
+        background: transparent!important;
     }
 
     .navbar {
@@ -288,7 +318,7 @@
 
     .navbar-inner .dropdown-menu {
         border: medium none;
-        background: none;
+        background: #3f3f3f;
         border-radius: 0;
         -webkit-box-shadow: none;
         box-shadow: none;
@@ -428,17 +458,23 @@
 :: 3.0 WELCOME AREA CSS
 ****************************** */
 @media (max-width: 991px) {
-    .welcome-area,
-    .inner .welcome-area {
-        height: 700px !important;
-    }
 
     .homepage-3 .welcome-area .subscribe-form {
         width: 100%;
     }
 
+    .welcome-area{
+        background-repeat: repeat;
+        background-size: auto;
+    }
+
     .homepage-5 .welcome-area {
         height: 1150px !important;
+    }
+
+    .welcome-area .image-box{
+        max-width: 100%;
+        margin-top: 40px;
     }
 }
 
@@ -474,6 +510,20 @@
 
     .welcome-thumb {
         max-width: 230px;
+    }
+
+    .welcome-area .image-box{
+        margin: 10px 0 0;
+    }
+    .welcome-area .slick .slick__slide + .slick__slide{
+        padding-top: 10px;
+    }
+    .welcome-area{
+        padding-bottom: 20px;
+    }
+
+    .slick__slide:last-child .image-box{
+        margin-bottom: 30px;
     }
 }
 
