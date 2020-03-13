@@ -476,6 +476,10 @@
         max-width: 100%;
         margin-top: 40px;
     }
+    .navbar-sticky-on{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 
 @media (max-width: 767px) {
@@ -521,10 +525,10 @@
     .welcome-area{
         padding-bottom: 20px;
     }
-
-    .slick__slide:last-child .image-box{
-        margin-bottom: 30px;
+    .work-icon{
+        font-size: 48px;
     }
+
 }
 
 /* ******************************

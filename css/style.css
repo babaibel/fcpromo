@@ -146,7 +146,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #7c4fe0;
+    color: #7B5735;
 }
 
 a,
@@ -325,6 +325,8 @@ img {
     outline: 0 none;
     position: relative;
     z-index: 1;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .btn:hover,
@@ -473,7 +475,11 @@ img {
 .benifits-item:after {
     background: #ffff00;
     color: #3f3f3f;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover{
+    background: #3f3f3f;
+    color: #ffff00;
 }
 
 
@@ -481,6 +487,11 @@ img {
 .btn.btn-light:focus,
 .btn.btn-light:active {
     background: #f8f9fa;
+}
+
+.btn.btn-light:hover{
+    background: #ffff00;
+    color: #3f3f3f;
 }
 
 /*SOCIAL ICONS*/
@@ -988,7 +999,7 @@ img {
     color: #333;
 }
 
-.list-box.media{
+.check-list--big .list-box.media{
     align-items: center;
 }
 
@@ -1075,6 +1086,7 @@ img {
 
 .welcome-area .image-box .btn:hover{
     background: #fff;
+    color: #3f3f3f;
     left: 0px;
 }
 
@@ -1421,6 +1433,11 @@ img {
     border-radius: 50%;
     color: #ff0;
     background: #3f3f3f;
+    margin-top: 5px;
+}
+
+.list-box .icon.align-self-center{
+    margin-top: 0;
 }
 
 @media (max-width: 575px) {
@@ -1643,7 +1660,11 @@ img {
 }
 
 .single-price-plan table{
-    margin-bottom: 0;
+    margin-bottom: 0;  
+}
+
+.single-price-plan table.table-striped{
+    min-width: 480px;
 }
 
 .single-price-plan table > thead > tr:first-child th{
@@ -1664,6 +1685,10 @@ img {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+}
+
+.plan-button .btn{
+    white-space: nowrap;
 }
 
 .single-price-plan .icon{

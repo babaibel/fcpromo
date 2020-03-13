@@ -113,6 +113,8 @@
     // :: 5.0 SMOOTH SCROLLING ACTIVE CODE
     scrollLink.on('click', function (e) {
         e.preventDefault();
+        $('.navbar').removeClass('active');
+        $('body').removeClass('canvas-open');
         $('body,html').animate({
             scrollTop: $(this.hash).offset().top
         }, 1000);
